@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+table {
+  font-family: "Roboto Condensed", sans-serif;
+  border-collapse: collapse; /* merge all the rows and columns */
+  width: 100%;
+  color: #7a7f92;
+}
+th {
+  text-align: center;
+  padding: 8px;
+}
+td {
+  border: 2px solid #1f273b;
+  text-align: center;
+  padding: 8px;
+}
+.table-container {
+  width: 80%;
+  background-color: #1f273b;
+  padding: 20px 10px;
+  overflow-x: auto; /* if size of screen is less then scroll bar will appear */
+}
+
+/* to select sites column */
+tr > td:nth-child(1) {
+  color: #975871;
+}
+
+/* to select table header */
+tr:first-child {
+  color: #284b6c;
+}
+
+/* to select all even rows except header */
+tr:nth-child(2n + 2) {
+  background-color: #313c4f;
+}
+
+/* to select all odd rows execept header */
+tr:nth-child(2n + 3) {
+  background-color: #2d3448;
+}
+
+h1 {
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #77a1d3, #79cbca, #e684ae);
+  width: 100vw;
+  height: 100vh;
+}
